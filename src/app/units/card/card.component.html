@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    @for (item of products; track item.id) {
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{item.image}}" class="card-img-top" alt="..." style="max-height: 200px; max-width: 160px;">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.description}}</p>
+            <a routerLink="{{item.id}}" class="btn btn-primary">go somewhere</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
